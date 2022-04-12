@@ -66,7 +66,6 @@ public class TestApi {
     }
 
 
-
     @Test
     public static void myAPITest5() {
         given()
@@ -91,6 +90,7 @@ public class TestApi {
                 .log().all()
                 .statusCode(200);
     }
+
     @Test
     public static void myAPITest7() {
         given()
