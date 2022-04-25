@@ -1,4 +1,5 @@
 import io.restassured.http.ContentType;
+import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -56,7 +57,7 @@ public class TestApi {
     @Test
     public static void myAPITest4() {
         given()
-                .baseUri("http://192.168.0.180:8200/sys/")
+                .baseUri("http://192.168.0.180:8200/v1/sys/")
                 .contentType(ContentType.JSON)
                 .when()
                 .get("health")
@@ -64,6 +65,7 @@ public class TestApi {
                 .log().all()
                 .statusCode(200);
     }
+
 
 
     @Test
@@ -90,7 +92,6 @@ public class TestApi {
                 .log().all()
                 .statusCode(200);
     }
-
     @Test
     public static void myAPITest7() {
         given()
