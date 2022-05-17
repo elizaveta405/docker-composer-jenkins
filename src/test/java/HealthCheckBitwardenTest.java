@@ -7,7 +7,7 @@ public class HealthCheckBitwardenTest {
     @Test
     public static void healthCheckBitwarden() {
         given()
-                .baseUri("http://192.168.0.45:90")
+                .baseUri("http://192.168.0.45:80")
                 .contentType(ContentType.JSON)
                 .when()
                 .get("/alive")
