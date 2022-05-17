@@ -7,7 +7,7 @@ public class HealthCheckAlertmanagerTest {
     @Test
     public static void healthCheckAlertmanager() {
         given()
-                .baseUri("http://192.168.0.49:9093/")
+                .baseUri("http://192.168.0.49:9000/")
                 .contentType(ContentType.JSON)
                 .when()
                 .get("-/healthy")
