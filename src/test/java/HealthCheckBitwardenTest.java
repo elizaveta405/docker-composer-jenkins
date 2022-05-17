@@ -13,7 +13,7 @@ public class HealthCheckBitwardenTest {
                 .get("/alive")
                 .then()
                 .log().all()
-                .statusCode(404);
+                .statusCode(200);
     }
 
 }
