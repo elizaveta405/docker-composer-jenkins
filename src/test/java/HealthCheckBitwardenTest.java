@@ -15,5 +15,4 @@ public class HealthCheckBitwardenTest {
                 .log().all()
                 .statusCode(200);
     }
-
 }

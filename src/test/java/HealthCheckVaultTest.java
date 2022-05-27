@@ -7,7 +7,7 @@ public class HealthCheckVaultTest {
     @Test
     public static void healthCheckVault() {
         given()
-                .baseUri("http://192.168.0.180:8200/v1/sys/")
+                .baseUri("http://192.168.0.181:8200/v1/sys/")
                 .contentType(ContentType.JSON)
                 .when()
                 .get("health")
