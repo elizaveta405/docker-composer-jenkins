@@ -13,6 +13,6 @@ public class HealthCheckMinioTest {
                 .get("minio/health/live")
                 .then()
                 .log().all()
-                .statusCode(200);
+                .statusCode(404);
     }
 }
